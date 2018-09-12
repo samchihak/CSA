@@ -10,6 +10,9 @@ public class MediaLib
     public static void main ()
     {
         System.out.println("Welcome to your Media Library");
+        Song song1 = new Song();
+        song1.setTitle("Sold Out Dates");
+        System.out.println(song1.getTitle());
 
     }  
 
