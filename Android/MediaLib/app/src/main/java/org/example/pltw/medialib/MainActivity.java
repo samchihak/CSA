@@ -14,7 +14,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView welcomeText = (TextView) findViewById(R.id.welcomeTextView);
-;
+        Greeter greeter = new Greeter();
+        welcomeText.settext(greeter.message);
     }
 
     /**
@@ -23,6 +24,28 @@ public class MainActivity extends AppCompatActivity {
     public void showMedia(View v) {
 
         TextView outputText = (TextView) findViewById(R.id.mediaLibText);
-        outputText.append("none");
+        outputText.append("Welcome to your Media Library.");
+        outputText.append("\n");
+        outputText.append("\n");
+        outputText.append("SONGS:");
+        outputText.append("\n");
+        Song song1 = new Song();
+        song1.setTitle("Sold Out Dates");
+        outputText.append(song1.getTitle());
+        outputText.append("\n");
+        outputText.append("\n");
+        outputText.append("MOVIES:");
+        outputText.append("\n");
+        Movie movie1 = new Movie();
+        movie1.setTitle("Gladiator");
+        outputText.append(movie1.getTitle());
+        outputText.append("\n");
+        outputText.append("\n");
+        outputText.append("BOOKS:");
+        Book book1 = new Book();
+        book1.setTitle("Thus Spoke Zarathustra");
+        outputText.append("\n");
+        outputText.append(book1.getTitle());
+
     }
 }
