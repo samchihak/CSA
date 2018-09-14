@@ -2,6 +2,7 @@ package org.example.pltw.medialib;
 
 public class Book {
     private String title;
+    private String author;
     /**
      * Constructor for objects of class Song
      */
@@ -19,5 +20,12 @@ public class Book {
 
     public void setTitle(String t) {
         title = t;
+    }
+    public String getAuthor()
+    {
+        return author;
+    }
+    public void setAuthor(String a) {
+        author = a;
     }
 }

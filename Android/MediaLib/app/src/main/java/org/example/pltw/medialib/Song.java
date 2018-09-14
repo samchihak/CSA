@@ -9,6 +9,7 @@ package org.example.pltw.medialib;
 public class Song
 {
     private String title;
+    public String artist;
     /**
      * Constructor for objects of class Song
      */
@@ -26,5 +27,12 @@ public class Song
 
     public void setTitle(String t) {
         title = t;
+    }
+    public String getArtist()
+    {
+        return artist;
+    }
+    public void setArtist(String a) {
+        artist = a;
     }
 }
