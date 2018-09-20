@@ -19,6 +19,8 @@ public class MediaLib
         Movie movie1 = new Movie();
         movie1.setTitle("Gladiator");
         System.out.println(movie1.getTitle());
+        song1.setPrice(10.0);
+        System.out.println(song1.getPrice());
 
     }  
 

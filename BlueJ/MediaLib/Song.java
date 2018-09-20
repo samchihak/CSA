@@ -30,4 +30,13 @@ public class Song
     public void setTitle(String t) {
         title = t;
     }
+    public double getPrice()
+    {
+        return price;
+    }
+    public void setPrice(double d) 
+    {
+        price = d;
+    }
+        
 }
