@@ -8,6 +8,8 @@
 public class Song
 {
     private String title;
+    private int rating;
+    private double price;
     /**
      * Constructor for objects of class Song
      */
@@ -15,7 +17,9 @@ public class Song
     {
         // initialise instance variables
         int rating = 0;
-        String title = "";  
+        String title = "";
+        double price = 0.0;
+        
     }
     // methods
     public String getTitle() 

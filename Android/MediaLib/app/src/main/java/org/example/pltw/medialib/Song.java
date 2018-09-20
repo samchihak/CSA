@@ -10,6 +10,7 @@ public class Song
 {
     private String title;
     public String artist;
+    public String sung;
     /**
      * Constructor for objects of class Song
      */
@@ -35,4 +36,9 @@ public class Song
     public void setArtist(String a) {
         artist = a;
     }
+    public void showSong(String c) {
+       String sung = getTitle() + " " + "by" + " " + getArtist();
+
+    }
+
 }

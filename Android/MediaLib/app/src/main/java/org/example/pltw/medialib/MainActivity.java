@@ -44,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
         outputText.append(" " + "by" + " ");
         outputText.append(song2.getArtist());
         outputText.append("\n");
+        outputText.append(song1.sung);
+        outputText.append("\n");
         outputText.append("\n");
         outputText.append("MOVIES:");
         outputText.append("\n");
