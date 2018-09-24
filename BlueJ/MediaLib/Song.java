@@ -10,6 +10,7 @@ public class Song
     private String title;
     private int rating;
     private double price;
+    private boolean favorite;
     /**
      * Constructor for objects of class Song
      */
@@ -19,7 +20,14 @@ public class Song
         int rating = 0;
         String title = "";
         double price = 0.0;
-        
+    }
+    public Song(String title, double price, int rating) {
+        this.title = title;
+        this.price = price;
+        this.rating = rating;
+    }
+    public void addToFavorites(){
+        favorite = true;
     }
     // methods
     public String getTitle() 
@@ -38,5 +46,7 @@ public class Song
     {
         price = d;
     }
-        
+    public int getRating(){
+        return rating;
+    }
 }
