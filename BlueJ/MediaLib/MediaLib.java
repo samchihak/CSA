@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class MediaLib here.
+ * Media Library Project
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Sam Chihak and Sam Rivers
+ * @version 9/25
  */
 public class MediaLib
 {

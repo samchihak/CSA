@@ -2,8 +2,8 @@
 /**
  * Songs in the library.
  *
- * @author Sam Chihak
- * @version 9/7/2018
+ * @author Sam Chihak and Sam Rivers
+ * @version 9/7/2018 
  */
 public class Song
 {

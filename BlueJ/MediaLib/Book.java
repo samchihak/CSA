@@ -2,7 +2,7 @@
 /**
  * Books in MediaLib.
  *
- * @author Sam Chihak
+ * @author Sam Chihak and Sam Rivers
  * @version 9/12/18
  */
 public class Book

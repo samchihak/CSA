@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Song
-comment0.text=\r\n\ Songs\ in\ the\ library.\r\n\r\n\ @author\ Sam\ Chihak\r\n\ @version\ 9/7/2018\r\n
+comment0.text=\r\n\ Songs\ in\ the\ library.\r\n\r\n\ @author\ Sam\ Chihak\ and\ Sam\ Rivers\r\n\ @version\ 9/7/2018\ \r\n
 comment1.params=
 comment1.target=Song()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Song\r\n
