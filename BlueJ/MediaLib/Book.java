@@ -8,6 +8,7 @@
 public class Book
 {
     private String title;
+    private int rating;
     /**
      * Constructor for objects of class Song
      */
@@ -17,6 +18,10 @@ public class Book
         int rating = 0;
         String title = "";  
     }
+    public Book(String title, int rating){
+        this.title = title;
+        this.rating = rating;
+    }
     // methods
     public String getTitle() 
     {
@@ -25,5 +30,8 @@ public class Book
 
     public void setTitle(String t) {
         title = t;
+    }
+    public int getRating(){
+        return rating;
     }
 }
