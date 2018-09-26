@@ -2,10 +2,10 @@
 /**
  * Movies in MediaLib.
  *
- * @author Sam Chihak
+ * @author Sam Chihak and Sam Rivers
  * @version 9/12/18
  */
-public class Movie
+public class Film
 {
    private String title;
    private int duration;
@@ -16,14 +16,14 @@ public class Movie
     /**
      * Constructor for objects of class Song
      */
-    public Movie()
+    public Film()
     {
         // initialise instance variables
         int rating = 0;
         String title = ""; 
         int duration = 0;
     }
-    public Movie(String title, int duration, int rating){
+    public Film(String title, int rating, int duration){
         this.title = title;
         this.duration = duration;
         this.rating = rating;
@@ -51,5 +51,8 @@ public class Movie
         hours = (duration - minutes)/60;
         length = hours + " " + "Hours" + " " + minutes + " " + "minutes";
         return length;
+    }
+    public int getRating(){
+        return rating;
     }
 }

@@ -1,11 +1,11 @@
 #BlueJ class context
-comment0.target=Movie
-comment0.text=\r\n\ Movies\ in\ MediaLib.\r\n\r\n\ @author\ Sam\ Chihak\r\n\ @version\ 9/12/18\r\n
+comment0.target=Film
+comment0.text=\r\n\ Movies\ in\ MediaLib.\r\n\r\n\ @author\ Sam\ Chihak\ and\ Sam\ Rivers\r\n\ @version\ 9/12/18\r\n
 comment1.params=
-comment1.target=Movie()
+comment1.target=Film()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Song\r\n
-comment2.params=title\ duration\ rating
-comment2.target=Movie(java.lang.String,\ int,\ int)
+comment2.params=title\ rating\ duration
+comment2.target=Film(java.lang.String,\ int,\ int)
 comment3.params=
 comment3.target=java.lang.String\ getTitle()
 comment4.params=t
@@ -16,4 +16,6 @@ comment6.params=d
 comment6.target=void\ setDuration(int)
 comment7.params=
 comment7.target=java.lang.String\ dispDur()
-numComments=8
+comment8.params=
+comment8.target=int\ getRating()
+numComments=9

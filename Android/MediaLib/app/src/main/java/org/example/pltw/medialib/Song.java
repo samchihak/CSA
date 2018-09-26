@@ -1,16 +1,18 @@
 package org.example.pltw.medialib;
 
+
 /**
  * Songs in the library.
  *
- * @author Sam Chihak
+ * @author Sam Chihak and Sam Rivers
  * @version 9/7/2018
  */
 public class Song
 {
     private String title;
-    public String artist;
-    public String sung;
+    private int rating;
+    private double price;
+    private boolean favorite;
     /**
      * Constructor for objects of class Song
      */
@@ -19,6 +21,15 @@ public class Song
         // initialise instance variables
         int rating = 0;
         String title = "";
+        double price = 0.0;
+    }
+    public Song(String title, double price, int rating) {
+        this.title = title;
+        this.price = price;
+        this.rating = rating;
+    }
+    public void addToFavorites(){
+        favorite = true;
     }
     // methods
     public String getTitle()
@@ -29,16 +40,21 @@ public class Song
     public void setTitle(String t) {
         title = t;
     }
-    public String getArtist()
+    public double getPrice()
     {
-        return artist;
+        return price;
     }
-    public void setArtist(String a) {
-        artist = a;
+    public void setPrice(double d)
+    {
+        price = d;
     }
-    public void showSong(String c) {
+    public int getRating(){
+        return rating;
+    }
+
+    /*public void showSong(String c) {
        String sung = getTitle() + " " + "by" + " " + getArtist();
 
-    }
+    }*/
 
 }
