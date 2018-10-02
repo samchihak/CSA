@@ -1,4 +1,4 @@
-package com.company;
+
 
 public class Main {
     /**
@@ -7,7 +7,7 @@ public class Main {
      *
      * For best results do not use spaces in your input
      */
-    public static void main(String args[])
+    public static void main()
     {
         System.out.println("If you provide me some information I will provide a Science Fiction name for you.");
         System.out.println("Please have all responses  be at least three characters long.");

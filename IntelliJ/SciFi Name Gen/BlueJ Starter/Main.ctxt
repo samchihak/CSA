@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Main
+comment1.params=
+comment1.target=void\ main()
+comment1.text=\r\n\ All\ input\ that\ you\ provide\ should\ be\ at\ least\ three\ letters\ long\r\n\ or\ the\ program\ may\ crash\ (but\ feel\ free\ to\ test\ this\!)\r\n\r\n\ For\ best\ results\ do\ not\ use\ spaces\ in\ your\ input\r\n
+numComments=2
