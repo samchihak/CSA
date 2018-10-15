@@ -5,11 +5,8 @@
  * @author Sam Chihak and Sam Rivers
  * @version 9/7/2018 
  */
-public class Song
+public class Song extends All
 {
-    private String title;
-    private int rating;
-    private double price;
     private boolean favorite;
     /**
      * Constructor for objects of class Song
@@ -21,32 +18,19 @@ public class Song
         String title = "";
         double price = 0.0;
     }
-    public Song(String title, double price, int rating) {
+    public Song(String title, double price, int rating, int duration) {
         this.title = title;
         this.price = price;
         this.rating = rating;
+        this.duration = duration;
     }
     public void addToFavorites(){
         favorite = true;
     }
-    // methods
-    public String getTitle() 
-    {
-        return title;
-    }
-
-    public void setTitle(String t) {
-        title = t;
-    }
-    public double getPrice()
-    {
-        return price;
-    }
-    public void setPrice(double d) 
-    {
-        price = d;
-    }
-    public int getRating(){
-        return rating;
-    }
+    public String getDuration(){
+      int seconds = duration % 60;
+      int minutes = (duration - seconds) / 60;
+      String strDuration = minutes + " " + "minutes" + " " + seconds + " " + "seconds";
+      return strDuration;
+    }  
 }

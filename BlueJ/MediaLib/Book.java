@@ -5,33 +5,22 @@
  * @author Sam Chihak and Sam Rivers
  * @version 9/12/18
  */
-public class Book
+public class Book extends All
 {
-    private String title;
-    private int rating;
-    /**
-     * Constructor for objects of class Song
-     */
     public Book()
     {
-        // initialise instance variables
         int rating = 0;
         String title = "";  
     }
-    public Book(String title, int rating){
+    public Book(String title, int rating, double price, int duration){
         this.title = title;
         this.rating = rating;
+        this.price = price;
+        this.duration = duration;
     }
-    // methods
-    public String getTitle() 
-    {
-        return title;
+    public String getDuration(){
+        String strDuration = duration + " " + "pages";
+        return strDuration;
     }
-
-    public void setTitle(String t) {
-        title = t;
-    }
-    public int getRating(){
-        return rating;
-    }
+    
 }
