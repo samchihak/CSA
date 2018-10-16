@@ -96,7 +96,6 @@ public class MediaLib
         film6.pint();
         film7.pint();
         film8.pint();
-        
 
     }  
     
