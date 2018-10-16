@@ -5,14 +5,8 @@
  * @author Sam Chihak and Sam Rivers
  * @version 9/12/18
  */
-public class Film
+public class Film extends All
 {
-   private String title;
-   private int duration;
-   private int rating;
-   private int hours;
-   private int minutes;
-   private String length;
     /**
      * Constructor for objects of class Song
      */
@@ -22,37 +16,22 @@ public class Film
         int rating = 0;
         String title = ""; 
         int duration = 0;
+        double price = 0.0;
     }
-    public Film(String title, int rating, int duration){
+    public Film(String title, int rating, int duration, double price){
         this.title = title;
         this.duration = duration;
         this.rating = rating;
+        this.price = price;
     }
     // methods
-    public String getTitle() 
-    {
-        return title;
-    }
-
-    public void setTitle(String t) {
-        title = t;
+    public String getDuration(){
+        int minutes = duration % 60;
+        int hours = (duration - minutes)/60;
+        String strDuration = hours + " " + "Hours" + " " + minutes + " " + "minutes";
+        return strDuration;
     }
     
-    public int getDuration(){
-        return duration;
-    }
     
-    public void setDuration(int d) {
-        duration = d;
-    }
     
-    public String dispDur(){
-        minutes = duration % 60;
-        hours = (duration - minutes)/60;
-        length = hours + " " + "Hours" + " " + minutes + " " + "minutes";
-        return length;
-    }
-    public int getRating(){
-        return rating;
-    }
 }
