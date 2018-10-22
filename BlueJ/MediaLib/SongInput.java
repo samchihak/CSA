@@ -39,9 +39,9 @@ public class SongInput
             Song userSong = new Song(title, price, rating, duration);
             userSongs.add(userSong);
             x += 1;
+            System.out.println("__________________________");
         }
         System.out.println("Here are your favorite songs:");
-        System.out.println(" ");
         for (int i=0; i<userSongs.size(); i++)
             userSongs.get(i).pint(); 
     }
