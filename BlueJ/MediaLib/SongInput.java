@@ -40,6 +40,8 @@ public class SongInput
             userSongs.add(userSong);
             x += 1;
         }
+        System.out.println("Here are your favorite songs:");
+        System.out.println(" ");
         for (int i=0; i<userSongs.size(); i++)
             userSongs.get(i).pint(); 
     }
