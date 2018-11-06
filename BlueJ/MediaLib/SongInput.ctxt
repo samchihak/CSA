@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=SongInput
+comment0.text=\r\n\ Attempting\ to\ create\ a\ function\ that\ allows\ user\ to\ input\ songs\ to\ MediaLib\r\n\r\n\ @author\ Sam\ Chihak\ &\ Rivers\r\n\ @version\ 10/22\r\n
+comment1.params=
+comment1.target=void\ songInput()
+numComments=2
