@@ -97,9 +97,14 @@ public class MediaLib
         film7.pint();
         film8.pint();
         
-        System.out.println("Enter Some Songs:");
-        
-        
+        MediaFile.writeString(song1.getTitle() + "|" + song1.getRating());
+        MediaFile.writeString(song2.getTitle() + "|" + song2.getRating());
+        MediaFile.writeString(song3.getTitle() + "|" + song3.getRating());
+        MediaFile.writeString(song4.getTitle() + "|" + song4.getRating());
+        MediaFile.writeString(song5.getTitle() + "|" + song5.getRating());
+        MediaFile.writeString(song6.getTitle() + "|" + song6.getRating());
+        MediaFile.writeString(song7.getTitle() + "|" + song7.getRating());
+        MediaFile.writeString(song8.getTitle() + "|" + song8.getRating());
+        MediaFile.saveAndClose();
     }  
-    
 } 
