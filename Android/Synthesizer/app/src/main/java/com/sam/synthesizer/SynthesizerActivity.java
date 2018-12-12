@@ -259,12 +259,16 @@ public class SynthesizerActivity extends AppCompatActivity {
             View.OnClickListener onc5ButtonClick = new View.OnClickListener() {
                 public void onClick(View v) {
                     Log.i(TAG, "Twinkle Button clicked");
-                    for (int i = 0; i< twinkleArray.length; i++) {
+                    for (int i = 0; i < twinkleArray.length; i++) {
                         twinkleArray[i].seekTo(0);
                         twinkleArray[i].start();
-                        delayPlaying(WHOLE_NOTE/2);
-                    }
+                        if (i == 6 || i == 14){
+                            delayPlaying(WHOLE_NOTE);
+                        }else{
+                            delayPlaying(WHOLE_NOTE / 2);
+                        }
 
+                    }
                 }
 
             };
