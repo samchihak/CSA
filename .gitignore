@@ -1,6 +1,6 @@
 
 BlueJ/MediaLib/package.bluej
-*.xml
+
 *.gradle
 *.pro
 *.ogg
@@ -14,3 +14,4 @@ BlueJ/MediaLib/package.bluej
 Android/Synthesizer/.idea/caches/build_file_checksums.ser
 Android/Synthesizer/app/src/androidTest/java/com/sam/synthesizer/ExampleInstrumentedTest.java
 Android/Synthesizer/gradle/wrapper/gradle-wrapper.jar
+IntelliJ/SciFi Name Gen/SciFi/.idea/vcs.xml

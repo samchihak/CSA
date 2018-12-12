@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Synthesizer</string>
+    <string name="eButton">Low E</string>
+    <string name="fButton">Low F</string>
+    <string name="aButton">A</string>
+    <string name="bButton">B</string>
+    <string name="bbButton">B Flat</string>
+    <string name="cButton">C</string>
+    <string name="csButton">C Sharp</string>
+    <string name="dButton">D</string>
+    <string name="dsButton">D Sharp</string>
+    <string name="fsButton">F Sharp</string>
+    <string name="gButton">Low G</string>
+    <string name="gsButton">G Sharp</string>
+    <string name="heButton">High E</string>
+    <string name="hfButton">High F</string>
+    <string name="hfsButton">High F Sharp</string>
+    <string name="hgButton">High G</string>
+    <string name="c1Button">Challenge 1</string>
+    <!--
+    <string name="d_sharp">D Sharp</string>
+    <string name="a">A</string>
+    <string name="high_f_sharp">High F Sharp</string>
+    <string name="b_flat">B Flat</string>
+    <string name="c_sharp">C Sharp</string>
+    <string name="f_sharp">F Sharp</string>
+    <string name="g_sharp">G Sharp</string>
+    <string name="high_g">High G</string>
+    <string name="high_f">High F</string>
+    <string name="high_e">High E</string>
+    <string name="low_g">Low G</string>
+    <string name="low_f">Low F</string>
+    <string name="low_e">Low E</string>
+    <string name="c">C</string>
+    <string name="d">D</string>
+    <string name="b">B</string>
+    -->
+
+</resources>
