@@ -30,6 +30,7 @@ public class SynthesizerActivity extends AppCompatActivity {
     private Button hfsButton;
     private Button hgButton;
     private Button c1Button;
+    private Button c5Button;
 
 
     private MediaPlayer mpE;
@@ -48,6 +49,8 @@ public class SynthesizerActivity extends AppCompatActivity {
     private MediaPlayer mpHF;
     private MediaPlayer mpHFs;
     private MediaPlayer mpHG;
+
+
 
     private void delayPlaying(int delay) {
         try {
@@ -77,6 +80,7 @@ public class SynthesizerActivity extends AppCompatActivity {
         hfsButton = (Button) findViewById(R.id.hfsButton);
         hgButton = (Button) findViewById(R.id.hgButton);
         c1Button = (Button) findViewById(R.id.c1Button);
+        c5Button = (Button) findViewById(R.id.c5Button);
 
         mpE = MediaPlayer.create(this, R.raw.scalee);
         mpF = MediaPlayer.create(this, R.raw.scalef);
@@ -95,8 +99,10 @@ public class SynthesizerActivity extends AppCompatActivity {
         mpHFs = MediaPlayer.create(this, R.raw.scalehighfs);
         mpHG = MediaPlayer.create(this, R.raw.scalehighg);
 
+        final MediaPlayer[] scaleArray = {mpE,mpFs,mpGs, mpA, mpB, mpCs, mpDs, mpHE, mpDs, mpCs, mpB, mpA, mpFs, mpE};
+        final MediaPlayer[] twinkleArray = {mpA, mpA, mpHE, mpHE, mpHFs, mpHFs, mpHE, mpD, mpD, mpCs, mpCs, mpB, mpB, mpA};
 
-            View.OnClickListener oneButtonClick = new View.OnClickListener() {
+        View.OnClickListener oneButtonClick = new View.OnClickListener() {
                 public void onClick(View v) {
                     mpE.seekTo(0);
                     Log.i(TAG, "eButton Clicked");
@@ -239,26 +245,31 @@ public class SynthesizerActivity extends AppCompatActivity {
 
             View.OnClickListener onc1ButtonClick = new View.OnClickListener() {
                 public void onClick(View v) {
-                    Log.i(TAG, "Challenge 0 Button clicked");
-                    mpE.start();
-                    delayPlaying(WHOLE_NOTE/2);
-                    mpFs.start();
-                    delayPlaying(WHOLE_NOTE/2);
-                    mpGs.start();
-                    delayPlaying(WHOLE_NOTE/2);
-                    mpA.start();
-                    delayPlaying(WHOLE_NOTE/2);
-                    mpB.start();
-                    delayPlaying(WHOLE_NOTE/2);
-                    mpCs.start();
-                    delayPlaying(WHOLE_NOTE/2);
-                    mpDs.start();
-                    delayPlaying(WHOLE_NOTE/2);
-                    mpHE.start();
+                    Log.i(TAG, "Scale Button clicked");
+                    for (int i = 0; i< scaleArray.length; i++) {
+                        scaleArray[i].seekTo(0);
+                        scaleArray[i].start();
+                        delayPlaying(WHOLE_NOTE/2);
+                    }
+
             }
 
         };
             c1Button.setOnClickListener(onc1ButtonClick);
+            View.OnClickListener onc5ButtonClick = new View.OnClickListener() {
+                public void onClick(View v) {
+                    Log.i(TAG, "Twinkle Button clicked");
+                    for (int i = 0; i< twinkleArray.length; i++) {
+                        twinkleArray[i].seekTo(0);
+                        twinkleArray[i].start();
+                        delayPlaying(WHOLE_NOTE/2);
+                    }
+
+                }
+
+            };
+            c5Button.setOnClickListener(onc5ButtonClick);
+
         }
 
     }

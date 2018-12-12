@@ -16,7 +16,8 @@
     <string name="hfButton">High F</string>
     <string name="hfsButton">High F Sharp</string>
     <string name="hgButton">High G</string>
-    <string name="c1Button">Challenge 1</string>
+    <string name="c1Button">Scale</string>
+    <string name="c5Button">Twinkle</string>
     <!--
     <string name="d_sharp">D Sharp</string>
     <string name="a">A</string>
