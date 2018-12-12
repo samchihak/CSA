@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.R;
+//import android.R;
 
 public class SynthesizerActivity extends AppCompatActivity {
 
@@ -76,6 +76,7 @@ public class SynthesizerActivity extends AppCompatActivity {
         hfButton = (Button) findViewById(R.id.hfButton);
         hfsButton = (Button) findViewById(R.id.hfsButton);
         hgButton = (Button) findViewById(R.id.hgButton);
+        c1Button = (Button) findViewById(R.id.c1Button);
 
         mpE = MediaPlayer.create(this, R.raw.scalee);
         mpF = MediaPlayer.create(this, R.raw.scalef);
@@ -236,24 +237,24 @@ public class SynthesizerActivity extends AppCompatActivity {
             };
             hgButton.setOnClickListener(onhgButtonClick);
 
-        View.OnClickListener onc1ButtonClick = new View.OnClickListener() {
-            public void onClick(View v) {
-                Log.e("SynthesizerActivity", "Challenge 0 Button clicked");
-                mpE.start();
-                delayPlaying(WHOLE_NOTE/2);
-                mpFs.start();
-                delayPlaying(WHOLE_NOTE/2);
-                mpGs.start();
-                delayPlaying(WHOLE_NOTE/2);
-                mpA.start();
-                delayPlaying(WHOLE_NOTE/2);
-                mpB.start();
-                delayPlaying(WHOLE_NOTE/2);
-                mpCs.start();
-                delayPlaying(WHOLE_NOTE/2);
-                mpDs.start();
-                delayPlaying(WHOLE_NOTE/2);
-                mpHE.start();
+            View.OnClickListener onc1ButtonClick = new View.OnClickListener() {
+                public void onClick(View v) {
+                    Log.i(TAG, "Challenge 0 Button clicked");
+                    mpE.start();
+                    delayPlaying(WHOLE_NOTE/2);
+                    mpFs.start();
+                    delayPlaying(WHOLE_NOTE/2);
+                    mpGs.start();
+                    delayPlaying(WHOLE_NOTE/2);
+                    mpA.start();
+                    delayPlaying(WHOLE_NOTE/2);
+                    mpB.start();
+                    delayPlaying(WHOLE_NOTE/2);
+                    mpCs.start();
+                    delayPlaying(WHOLE_NOTE/2);
+                    mpDs.start();
+                    delayPlaying(WHOLE_NOTE/2);
+                    mpHE.start();
             }
 
         };
