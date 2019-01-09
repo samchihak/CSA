@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SynthePass</string>
+    <string name="eButton">Low E</string>
+    <string name="fButton">Low F</string>
+    <string name="aButton">A</string>
+    <string name="bButton">B</string>
+    <string name="bbButton">B Flat</string>
+    <string name="cButton">C</string>
+    <string name="csButton">C Sharp</string>
+    <string name="dButton">D</string>
+    <string name="dsButton">D Sharp</string>
+    <string name="fsButton">F Sharp</string>
+    <string name="gButton">Low G</string>
+    <string name="gsButton">G Sharp</string>
+    <string name="heButton">High E</string>
+    <string name="hfButton">High F</string>
+    <string name="hfsButton">High F Sharp</string>
+    <string name="hgButton">High G</string>
+    <string name="foButton">Set Your Synth</string>
+    <string name="okButton">Okay</string>
+    <string name="welcome">Thank you for choosing SynthePass.</string>
+
+</resources>
