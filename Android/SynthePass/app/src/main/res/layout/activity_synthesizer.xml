@@ -9,12 +9,13 @@
     style="?android:attr/buttonBarStyle">
 
     <TableLayout
+        android:id="@+id/tableLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/aButton"
@@ -23,8 +24,7 @@
                 android:layout_weight="1"
                 android:text="@string/aButton"
                 tools:layout_editor_absoluteX="32dp"
-                tools:layout_editor_absoluteY="92dp"
-                />
+                tools:layout_editor_absoluteY="92dp" />
 
             <Button
                 android:id="@+id/bButton"
@@ -42,8 +42,7 @@
                 android:layout_weight="1"
                 android:text="@string/cButton"
                 tools:layout_editor_absoluteX="279dp"
-                tools:layout_editor_absoluteY="92dp"
-                />
+                tools:layout_editor_absoluteY="92dp" />
         </TableRow>
 
         <TableRow
@@ -83,7 +82,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/gButton"
@@ -92,8 +91,7 @@
                 android:layout_weight="1"
                 android:text="@string/gButton"
                 tools:layout_editor_absoluteX="266dp"
-                tools:layout_editor_absoluteY="296dp"
-                />
+                tools:layout_editor_absoluteY="296dp" />
 
             <Button
                 android:id="@+id/heButton"
@@ -102,8 +100,7 @@
                 android:layout_weight="1"
                 android:text="@string/heButton"
                 tools:layout_editor_absoluteX="279dp"
-                tools:layout_editor_absoluteY="229dp"
-                />
+                tools:layout_editor_absoluteY="229dp" />
 
             <Button
                 android:id="@+id/hfButton"
@@ -119,7 +116,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/hgButton"
@@ -128,8 +125,7 @@
                 android:layout_weight="1"
                 android:text="@string/hgButton"
                 tools:layout_editor_absoluteX="153dp"
-                tools:layout_editor_absoluteY="420dp"
-                />
+                tools:layout_editor_absoluteY="420dp" />
 
             <Button
                 android:id="@+id/gsButton"
@@ -138,8 +134,7 @@
                 android:layout_weight="1"
                 android:text="@string/gsButton"
                 tools:layout_editor_absoluteX="264dp"
-                tools:layout_editor_absoluteY="361dp"
-                />
+                tools:layout_editor_absoluteY="361dp" />
 
             <Button
                 android:id="@+id/fsButton"
@@ -148,9 +143,9 @@
                 android:layout_weight="1"
                 android:text="@string/fsButton"
                 tools:layout_editor_absoluteX="32dp"
-                tools:layout_editor_absoluteY="361dp"
-                />
+                tools:layout_editor_absoluteY="361dp" />
         </TableRow>
+
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -162,8 +157,7 @@
                 android:layout_weight="1"
                 android:text="@string/csButton"
                 tools:layout_editor_absoluteX="279dp"
-                tools:layout_editor_absoluteY="160dp"
-                />
+                tools:layout_editor_absoluteY="160dp" />
 
             <Button
                 android:id="@+id/bbButton"
@@ -172,8 +166,7 @@
                 android:layout_weight="1"
                 android:text="@string/bbButton"
                 tools:layout_editor_absoluteX="153dp"
-                tools:layout_editor_absoluteY="160dp"
-                />
+                tools:layout_editor_absoluteY="160dp" />
 
             <Button
                 android:id="@+id/dsButton"
@@ -182,10 +175,10 @@
                 android:layout_weight="1"
                 android:text="@string/dsButton"
                 tools:layout_editor_absoluteX="32dp"
-                tools:layout_editor_absoluteY="230dp"
-                />
+                tools:layout_editor_absoluteY="230dp" />
 
         </TableRow>
+
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -211,5 +204,36 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp" />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="68dp"
+        android:text="@string/okButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/tableLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/incorrectPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="372dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="116dp"
+        android:text="@string/incorrectPass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tableLayout"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61" />
 
 </android.support.constraint.ConstraintLayout>

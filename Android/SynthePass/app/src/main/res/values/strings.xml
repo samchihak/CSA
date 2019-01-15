@@ -19,5 +19,16 @@
     <string name="foButton">Set Your Synth</string>
     <string name="okButton">Okay</string>
     <string name="welcome">Thank you for choosing SynthePass.</string>
+    <string name="rstButton">Reset</string>
+    <string name="noButton">Enter Your Synth</string>
+    <string name="loButton">Lock</string>
+    <string name="incorrectPass"></string>
+    <string name="title_activity_nav">nav</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">SynthePass</string>
+    <string name="nav_header_subtitle">samchihak@me.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
 
 </resources>

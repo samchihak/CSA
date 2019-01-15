@@ -1,5 +1,6 @@
 package com.sam.synthepass;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -28,6 +29,7 @@ public class Synthesizer extends AppCompatActivity {
     private Button hfButton;
     private Button hfsButton;
     private Button hgButton;
+    private Button okButton;
 
     private MediaPlayer mpE;
     private MediaPlayer mpF;
@@ -62,22 +64,23 @@ public class Synthesizer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_synthesizer);
-        eButton = (Button) findViewById(R.id.eButton);
-        fButton = (Button) findViewById(R.id.fButton);
-        aButton = (Button) findViewById(R.id.aButton);
-        bButton = (Button) findViewById(R.id.bButton);
-        bbButton = (Button) findViewById(R.id.bbButton);
-        cButton = (Button) findViewById(R.id.cButton);
-        csButton = (Button) findViewById(R.id.csButton);
-        dButton = (Button) findViewById(R.id.dButton);
-        dsButton = (Button) findViewById(R.id.dsButton);
-        fsButton = (Button) findViewById(R.id.fsButton);
-        gButton = (Button) findViewById(R.id.gButton);
-        gsButton = (Button) findViewById(R.id.gsButton);
-        heButton = (Button) findViewById(R.id.heButton);
-        hfButton = (Button) findViewById(R.id.hfButton);
-        hfsButton = (Button) findViewById(R.id.hfsButton);
-        hgButton = (Button) findViewById(R.id.hgButton);
+        eButton = findViewById(R.id.eButton);
+        fButton = findViewById(R.id.fButton);
+        aButton = findViewById(R.id.aButton);
+        bButton = findViewById(R.id.bButton);
+        bbButton = findViewById(R.id.bbButton);
+        cButton = findViewById(R.id.cButton);
+        csButton = findViewById(R.id.csButton);
+        dButton = findViewById(R.id.dButton);
+        dsButton = findViewById(R.id.dsButton);
+        fsButton = findViewById(R.id.fsButton);
+        gButton = findViewById(R.id.gButton);
+        gsButton = findViewById(R.id.gsButton);
+        heButton = findViewById(R.id.heButton);
+        hfButton = findViewById(R.id.hfButton);
+        hfsButton = findViewById(R.id.hfsButton);
+        hgButton = findViewById(R.id.hgButton);
+        okButton = findViewById(R.id.okButton);
 
         mpE = MediaPlayer.create(this, R.raw.scalee);
         mpF = MediaPlayer.create(this, R.raw.scalef);
@@ -96,6 +99,7 @@ public class Synthesizer extends AppCompatActivity {
         mpHFs = MediaPlayer.create(this, R.raw.scalehighfs);
         mpHG = MediaPlayer.create(this, R.raw.scalehighg);
         count = 0;
+        attempt = "";
 
 
 
@@ -105,6 +109,8 @@ public class Synthesizer extends AppCompatActivity {
                 Log.i(TAG, "eButton Clicked");
                 mpE.start();
                 count += 1;
+                attempt += "E";
+                Log.i(TAG, "count:"+count+", "+"current pass:"+attempt+"Pass="+synthPass);
             }
         };
         eButton.setOnClickListener(oneButtonClick);
@@ -114,6 +120,8 @@ public class Synthesizer extends AppCompatActivity {
                 Log.i(TAG, "fButton Clicked");
                 mpF.start();
                 count += 1;
+                attempt += "F";
+                Log.i(TAG, "count:"+count+", "+"current pass:"+attempt);
             }
         };
         fButton.setOnClickListener(onfButtonClick);
@@ -124,6 +132,8 @@ public class Synthesizer extends AppCompatActivity {
                 Log.i(TAG, "aButton Clicked");
                 mpA.start();
                 count += 1;
+                attempt += "A";
+                Log.i(TAG, "count:"+count+", "+"current pass:"+attempt);
             }
         };
         aButton.setOnClickListener(onaButtonClick);
@@ -134,6 +144,8 @@ public class Synthesizer extends AppCompatActivity {
                 Log.i(TAG, "bButton Clicked");
                 mpB.start();
                 count += 1;
+                attempt += "B";
+                Log.i(TAG, "count:"+count+", "+"current pass:"+attempt);
             }
         };
         bButton.setOnClickListener(onbButtonClick);
@@ -144,6 +156,8 @@ public class Synthesizer extends AppCompatActivity {
                 Log.i(TAG, "bbButton Clicked");
                 mpBb.start();
                 count += 1;
+                attempt += "P";
+                Log.i(TAG, "count:"+count+", "+"current pass:"+attempt);
             }
         };
         bbButton.setOnClickListener(onbbButtonClick);
@@ -154,6 +168,8 @@ public class Synthesizer extends AppCompatActivity {
                 Log.i(TAG, "cButton Clicked");
                 mpC.start();
                 count += 1;
+                attempt += "C";
+                Log.i(TAG, "count:"+count+", "+"current pass:"+attempt);
             }
         };
         cButton.setOnClickListener(oncButtonClick);
@@ -163,6 +179,8 @@ public class Synthesizer extends AppCompatActivity {
                 Log.i(TAG, "csButton Clicked");
                 mpCs.start();
                 count += 1;
+                attempt += "O";
+                Log.i(TAG, "count:"+count+", "+"current pass:"+attempt);
             }
         };
         csButton.setOnClickListener(oncsButtonClick);
@@ -173,6 +191,8 @@ public class Synthesizer extends AppCompatActivity {
                 Log.i(TAG, "dButton Clicked");
                 mpD.start();
                 count += 1;
+                attempt += "D";
+                Log.i(TAG, "count:"+count+", "+"current pass:"+attempt);
             }
         };
         dButton.setOnClickListener(ondButtonClick);
@@ -183,6 +203,8 @@ public class Synthesizer extends AppCompatActivity {
                 Log.i(TAG, "dsButton Clicked");
                 mpDs.start();
                 count += 1;
+                attempt += "I";
+                Log.i(TAG, "count:"+count+", "+"current pass:"+attempt);
             }
         };
         dsButton.setOnClickListener(ondsButtonClick);
@@ -193,6 +215,8 @@ public class Synthesizer extends AppCompatActivity {
                 Log.i(TAG, "fsButton Clicked");
                 mpFs.start();
                 count += 1;
+                attempt += "U";
+                Log.i(TAG, "count:"+count+", "+"current pass:"+attempt);
             }
         };
         fsButton.setOnClickListener(onfsButtonClick);
@@ -202,6 +226,8 @@ public class Synthesizer extends AppCompatActivity {
                 Log.i(TAG, "gButton Clicked");
                 mpG.start();
                 count += 1;
+                attempt += "G";
+                Log.i(TAG, "count:"+count+", "+"current pass:"+attempt);
             }
         };
         gButton.setOnClickListener(ongButtonClick);
@@ -212,6 +238,8 @@ public class Synthesizer extends AppCompatActivity {
                 Log.i(TAG, "gsButton Clicked");
                 mpGs.start();
                 count += 1;
+                attempt += "Y";
+                Log.i(TAG, "count:"+count+", "+"current pass:"+attempt);
             }
         };
         gsButton.setOnClickListener(ongsButtonClick);
@@ -222,6 +250,8 @@ public class Synthesizer extends AppCompatActivity {
                 Log.i(TAG, "heButton Clicked");
                 mpHE.start();
                 count += 1;
+                attempt += "T";
+                Log.i(TAG, "count:"+count+", "+"current pass:"+attempt);
             }
         };
         heButton.setOnClickListener(onheButtonClick);
@@ -232,6 +262,8 @@ public class Synthesizer extends AppCompatActivity {
                 Log.i(TAG, "hfButton Clicked");
                 mpHF.start();
                 count += 1;
+                attempt += "R";
+                Log.i(TAG, "count:"+count+", "+"current pass:"+attempt);
             }
         };
         hfButton.setOnClickListener(onhfButtonClick);
@@ -242,6 +274,8 @@ public class Synthesizer extends AppCompatActivity {
                 Log.i(TAG, "hfsButton Clicked");
                 mpHFs.start();
                 count += 1;
+                attempt += "W";
+                Log.i(TAG, "count:"+count+", "+"current pass:"+attempt);
             }
         };
         hfsButton.setOnClickListener(onhfsButtonClick);
@@ -252,17 +286,31 @@ public class Synthesizer extends AppCompatActivity {
                 Log.i(TAG, "hgButton Clicked");
                 mpHG.start();
                 count += 1;
+                attempt += "Q";
+                Log.i(TAG, "count:"+count+", "+"current pass:"+attempt);
             }
         };
         hgButton.setOnClickListener(onhgButtonClick);
 
-        if (count >= 4){
+        View.OnClickListener onokButtonClick = new View.OnClickListener() {
+            public void onClick(View v) {
+                if(attempt.equals(synthPass)){
+                Intent first = new Intent(Synthesizer.this, Passwords.class);
+                Synthesizer.this.startActivity(first);}
+                /*else{
+                    //show incorrectPass
+                }*/
+
+            }
+        };
+        okButton.setOnClickListener(onokButtonClick);
+        /*if (count >= 4){
             for(int i = 0; i <allPlayers.length; i++){
                 allPlayers[i].seekTo(0);}
             if (attempt == synthPass){
                 //open next activity
             }
-        };
+        };*/
 
 
     }

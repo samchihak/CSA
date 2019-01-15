@@ -9,6 +9,7 @@ public class synthHolder extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
     private String synthPass;
     public String getSynthPass() {return synthPass;}
     public void setSynthPass(String synthPass) {this.synthPass = synthPass;}
