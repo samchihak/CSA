@@ -30,6 +30,7 @@ public class Synthesizer extends AppCompatActivity {
     private Button hfsButton;
     private Button hgButton;
     private Button okButton;
+    private Button resButton;
 
     private MediaPlayer mpE;
     private MediaPlayer mpF;
@@ -50,6 +51,7 @@ public class Synthesizer extends AppCompatActivity {
     private int count;
     private String attempt;
     private String synthPass = synthHolder.getInstance().getSynthPass();
+    private View incPass;
 
     final MediaPlayer[] allPlayers = {mpE,mpF,mpA,mpB,mpBb,mpC,mpCs,mpD,mpDs,mpFs,mpG,mpGs,mpHE,mpHF,mpHFs,mpHG};
 
@@ -81,6 +83,7 @@ public class Synthesizer extends AppCompatActivity {
         hfsButton = findViewById(R.id.hfsButton);
         hgButton = findViewById(R.id.hgButton);
         okButton = findViewById(R.id.okButton);
+        resButton = findViewById(R.id.resButton);
 
         mpE = MediaPlayer.create(this, R.raw.scalee);
         mpF = MediaPlayer.create(this, R.raw.scalef);
@@ -100,6 +103,7 @@ public class Synthesizer extends AppCompatActivity {
         mpHG = MediaPlayer.create(this, R.raw.scalehighg);
         count = 0;
         attempt = "";
+        incPass = findViewById(R.id.incPass);
 
 
 
@@ -297,13 +301,21 @@ public class Synthesizer extends AppCompatActivity {
                 if(attempt.equals(synthPass)){
                 Intent first = new Intent(Synthesizer.this, Passwords.class);
                 Synthesizer.this.startActivity(first);}
-                /*else{
-                    //show incorrectPass
-                }*/
+                else{
+                    incPass.setVisibility(View.VISIBLE);
+                }
 
             }
         };
         okButton.setOnClickListener(onokButtonClick);
+        View.OnClickListener onresButtonClick = new View.OnClickListener() {
+            public void onClick(View v) {
+                count = 0;
+                attempt = "";
+                incPass.setVisibility(View.INVISIBLE);
+            }
+        };
+        resButton.setOnClickListener(onresButtonClick);
         /*if (count >= 4){
             for(int i = 0; i <allPlayers.length; i++){
                 allPlayers[i].seekTo(0);}

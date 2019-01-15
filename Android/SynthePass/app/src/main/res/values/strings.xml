@@ -30,5 +30,7 @@
     <string name="nav_header_subtitle">samchihak@me.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
+    <string name="resButton">Reset</string>
+    <string name="noPass">No SynthePass detected. Please press <b>SET YOUR SYNTH</b> to set a password.</string>
+    <string name="incPass">Incorrect password. Please press reset and try again.</string>
 </resources>
