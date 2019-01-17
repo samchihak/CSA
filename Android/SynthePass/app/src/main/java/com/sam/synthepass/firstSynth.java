@@ -234,9 +234,9 @@ public class firstSynth extends AppCompatActivity {
         fsButton.setOnClickListener(onfsButtonClick);
         View.OnClickListener ongButtonClick = new View.OnClickListener() {
             public void onClick(View v) {
-                /*mpG.seekTo(0);
+                mpG.seekTo(0);
                 Log.i(TAG, "gButton Clicked");
-                mpG.start();*/
+                mpG.start();
                 count += 1;
                 setPass += "G";
                 Log.i(TAG, "count:"+count+", "+"current pass:"+setPass);
