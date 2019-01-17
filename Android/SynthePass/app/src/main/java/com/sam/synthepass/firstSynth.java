@@ -1,5 +1,6 @@
 package com.sam.synthepass;
 
+import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +8,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import org.apache.commons.io.FileUtils;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class firstSynth extends AppCompatActivity {
 
@@ -50,6 +56,9 @@ public class firstSynth extends AppCompatActivity {
     private MediaPlayer mpHG;
     private int count;
     private String setPass;
+    private File userSynthPass;
+    //private String filePath;
+
 
 
     final MediaPlayer[] allPlayers = {mpE,mpF,mpA,mpB,mpBb,mpC,mpCs,mpD,mpDs,mpFs,mpG,mpGs,mpHE,mpHF,mpHFs,mpHG};
@@ -102,6 +111,8 @@ public class firstSynth extends AppCompatActivity {
         mpHG = MediaPlayer.create(this, R.raw.scalehighg);
         count = 0;
         setPass="";
+        userSynthPass = new File(this.getFilesDir(), "userSynthPass");
+        //filePath = userSynthPass.getFilesDir().getPath().toString()+"userSynthPass";
 
 
 
@@ -296,6 +307,13 @@ public class firstSynth extends AppCompatActivity {
         View.OnClickListener onokButtonClick = new View.OnClickListener() {
             public void onClick(View v) {
                 synthHolder.getInstance().setSynthPass(setPass);
+                try {
+                    FileUtils.writeStringToFile(userSynthPass, setPass);
+                    Log.i(TAG, "Saved to file");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    android.util.Log.d("log", "File not saved: " + e.getMessage());
+                }
                 Intent first = new Intent(firstSynth.this, Passwords.class);
                 firstSynth.this.startActivity(first);
 

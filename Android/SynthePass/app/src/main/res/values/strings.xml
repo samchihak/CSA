@@ -33,4 +33,6 @@
     <string name="resButton">Reset</string>
     <string name="noPass">No SynthePass detected. Please press <b>SET YOUR SYNTH</b> to set a password.</string>
     <string name="incPass">Incorrect password. Please press reset and try again.</string>
+    <string name="appTitle">App</string>
+    <string name="pwTitle">Password</string>
 </resources>
