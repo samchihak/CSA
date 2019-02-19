@@ -8,6 +8,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
+import com.backendless.Backendless;
+import com.backendless.BackendlessUser;
+
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
@@ -307,6 +311,9 @@ public class firstSynth extends AppCompatActivity {
         View.OnClickListener onokButtonClick = new View.OnClickListener() {
             public void onClick(View v) {
                 synthHolder.getInstance().setSynthPass(setPass);
+                /*BackendlessUser userOne = new BackendlessUser();
+                userOne.setProperty("name", "User One");
+                userOne.setPassword(setPass);*/
                 try {
                     FileUtils.writeStringToFile(userSynthPass, setPass);
                     Log.i(TAG, "Saved to file");

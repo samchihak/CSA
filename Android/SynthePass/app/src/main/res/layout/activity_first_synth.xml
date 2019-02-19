@@ -26,7 +26,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/colorPrimaryLight"
                 android:text="@string/aButton"
+                android:textColor="@color/colorPrimaryDark"
                 tools:layout_editor_absoluteX="32dp"
                 tools:layout_editor_absoluteY="92dp" />
 
@@ -35,7 +37,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/colorPrimaryLight"
                 android:text="@string/bButton"
+                android:textColor="@color/colorPrimaryDark"
                 tools:layout_editor_absoluteX="153dp"
                 tools:layout_editor_absoluteY="92dp" />
 
@@ -44,7 +48,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/colorPrimaryLight"
                 android:text="@string/cButton"
+                android:textColor="@color/colorPrimaryDark"
                 tools:layout_editor_absoluteX="279dp"
                 tools:layout_editor_absoluteY="92dp" />
         </TableRow>
@@ -59,7 +65,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/colorPrimaryLight"
                 android:text="@string/dButton"
+                android:textColor="@color/colorPrimaryDark"
                 tools:layout_editor_absoluteX="32dp"
                 tools:layout_editor_absoluteY="160dp" />
 
@@ -69,7 +77,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/colorPrimaryLight"
                 android:text="@string/eButton"
+                android:textColor="@color/colorPrimaryDark"
                 tools:layout_editor_absoluteX="153dp"
                 tools:layout_editor_absoluteY="229dp" />
 
@@ -79,7 +89,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/colorPrimaryLight"
                 android:text="@string/fButton"
+                android:textColor="@color/colorPrimaryDark"
                 tools:layout_editor_absoluteX="32dp"
                 tools:layout_editor_absoluteY="296dp" />
         </TableRow>
@@ -93,7 +105,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/colorPrimaryLight"
                 android:text="@string/gButton"
+                android:textColor="@color/colorPrimaryDark"
                 tools:layout_editor_absoluteX="266dp"
                 tools:layout_editor_absoluteY="296dp" />
 
@@ -102,7 +116,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/colorPrimaryLight"
                 android:text="@string/heButton"
+                android:textColor="@color/colorPrimaryDark"
                 tools:layout_editor_absoluteX="279dp"
                 tools:layout_editor_absoluteY="229dp" />
 
@@ -111,11 +127,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/colorPrimaryLight"
                 android:text="@string/hfButton"
+                android:textColor="@color/colorPrimaryDark"
                 tools:layout_editor_absoluteX="153dp"
-                tools:layout_editor_absoluteY="296dp"
-
-                />
+                tools:layout_editor_absoluteY="296dp" />
         </TableRow>
 
         <TableRow
@@ -127,7 +143,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/colorPrimaryLight"
                 android:text="@string/hgButton"
+                android:textColor="@color/colorPrimaryDark"
                 tools:layout_editor_absoluteX="153dp"
                 tools:layout_editor_absoluteY="420dp" />
 
@@ -136,7 +154,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/colorPrimaryLight"
                 android:text="@string/gsButton"
+                android:textColor="@color/colorPrimaryDark"
                 tools:layout_editor_absoluteX="264dp"
                 tools:layout_editor_absoluteY="361dp" />
 
@@ -145,7 +165,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/colorPrimaryLight"
                 android:text="@string/fsButton"
+                android:textColor="@color/colorPrimaryDark"
                 tools:layout_editor_absoluteX="32dp"
                 tools:layout_editor_absoluteY="361dp" />
         </TableRow>
@@ -159,7 +181,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/colorPrimaryLight"
                 android:text="@string/csButton"
+                android:textColor="@color/colorPrimaryDark"
                 tools:layout_editor_absoluteX="279dp"
                 tools:layout_editor_absoluteY="160dp" />
 
@@ -168,7 +192,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/colorPrimaryLight"
                 android:text="@string/bbButton"
+                android:textColor="@color/colorPrimaryDark"
                 tools:layout_editor_absoluteX="153dp"
                 tools:layout_editor_absoluteY="160dp" />
 
@@ -177,7 +203,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/colorPrimaryLight"
                 android:text="@string/dsButton"
+                android:textColor="@color/colorPrimaryDark"
                 tools:layout_editor_absoluteX="32dp"
                 tools:layout_editor_absoluteY="230dp" />
 
@@ -194,7 +222,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/colorPrimaryLight"
                 android:text="@string/hfsButton"
+                android:textColor="@color/colorPrimaryDark"
                 tools:layout_editor_absoluteX="131dp"
                 tools:layout_editor_absoluteY="361dp" />
 
@@ -211,6 +241,7 @@
         android:layout_marginBottom="200dp"
         android:layout_weight="1"
         android:text="Set Your SynthePass!"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -228,6 +259,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="139dp"
         android:text='Press a sequence of four keys and then press "okay".'
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -248,10 +280,12 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="500dp"
         android:layout_marginBottom="71dp"
+        android:background="@color/colorPrimaryLight"
         android:text="@string/okButton"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.401"
         app:layout_constraintStart_toEndOf="@+id/tableLayout2"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
         app:layout_constraintVertical_bias="1.0" />
@@ -263,12 +297,14 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="500dp"
         android:layout_marginBottom="71dp"
+        android:background="@color/colorPrimaryLight"
         android:text="@string/rstButton"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.399"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toEndOf="@+id/tableLayout2"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
-        app:layout_constraintVertical_bias="0.622" />
+        app:layout_constraintVertical_bias="0.56" />
 
 </android.support.constraint.ConstraintLayout>

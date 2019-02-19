@@ -38,4 +38,8 @@
     <string name="navProf">Profile</string>
     <string name="navPass">Passwords</string>
     <string name="title_activity_profile">Profile</string>
+    <string name="dspButton">Delete Synth</string>
+    <string name="dspWarning">Warning: This action erase all data. Press DELETE SYNTH again to proceed.</string>
+    <string name="hintApp">Enter App</string>
+    <string name="hintPass">Enter Password</string>
 </resources>
