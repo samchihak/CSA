@@ -42,4 +42,11 @@
     <string name="dspWarning">Warning: This action erase all data. Press DELETE SYNTH again to proceed.</string>
     <string name="hintApp">Enter App</string>
     <string name="hintPass">Enter Password</string>
+    <string name="saveButton">Save</string>
+    <string name="cheapSpace">Click Buttons Below to Save</string>
+    <string name="saveFive">Save Password Five</string>
+    <string name="saveFour">Save Password Four</string>
+    <string name="saveThree">Save Password Three</string>
+    <string name="saveTwo">Save Password Two</string>
+    <string name="saveOne">Save Password One</string>
 </resources>

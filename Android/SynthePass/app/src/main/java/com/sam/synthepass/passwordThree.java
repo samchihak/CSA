@@ -1,11 +1,11 @@
 package com.sam.synthepass;
 
-public class Password {
+public class passwordThree {
 
     private String app;
     private String password;
 
-    public Password(){
+    public passwordThree(){
         app = null;
         password = null;
     }
