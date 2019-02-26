@@ -1,11 +1,8 @@
 package com.sam.synthepass;
 
-import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import java.io.FileOutputStream;
-import org.apache.commons.io.FileUtils;
 
 
 public class synthHolder extends AppCompatActivity {
@@ -20,7 +17,7 @@ public class synthHolder extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
 
     }
 

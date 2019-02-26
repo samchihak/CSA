@@ -6,8 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-
-import com.backendless.BackendlessUser;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -16,14 +15,11 @@ import java.io.IOException;
 import static org.apache.commons.io.FileUtils.readFileToString;
 
 public class FirstOpen extends AppCompatActivity {
-    private Button foButton;
-    private Button noButton;
-    private String synthPass;
-    private View noPass;
-    private File userSynthPass;
-    private Button dspButton;
-    private View dspWarning;
-    private FloatingActionButton farButton;
+    Button foButton, noButton, dspButton;
+    String synthPass;
+    View noPass, dspWarning;
+    File userSynthPass;
+    FloatingActionButton farButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +28,6 @@ public class FirstOpen extends AppCompatActivity {
         setContentView(R.layout.activity_first_open);
         foButton = findViewById(R.id.foButton);
         noButton = findViewById(R.id.noButton);
-        noPass = findViewById(R.id.noPass);
         dspButton = findViewById(R.id.dspButton);
         dspWarning = findViewById(R.id.dspWarning);
         farButton = findViewById(R.id.farButton);
@@ -54,7 +49,7 @@ public class FirstOpen extends AppCompatActivity {
         } catch (IOException e) {
             android.util.Log.d("log", "Error accessing file: " + e.getMessage());
         }
-        if(synthPass!=""){
+        if(!synthPass.equals("")){
             foButton.setVisibility(View.INVISIBLE);
             noButton.setVisibility(View.VISIBLE);
             dspButton.setVisibility(View.VISIBLE);
@@ -82,11 +77,11 @@ public class FirstOpen extends AppCompatActivity {
                         android.util.Log.d("log", "FINDME password is" + " " + synthPass);
                     }
                     else{
-                        noPass.setVisibility(View.VISIBLE);
+                        Toast.makeText(FirstOpen.this, "No password set. Press Set Your Synth to set." , Toast.LENGTH_SHORT).show();
                     }
                 }
                 else{
-                    noPass.setVisibility(View.VISIBLE);
+                    Toast.makeText(FirstOpen.this, "No password set. Press Set Your Synth to set." , Toast.LENGTH_SHORT).show();
                 }
             }
         };

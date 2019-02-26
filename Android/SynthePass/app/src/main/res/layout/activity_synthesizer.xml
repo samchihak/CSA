@@ -2,16 +2,18 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="?android:attr/buttonBarStyle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Synthesizer"
-    tools:layout_editor_absoluteY="81dp"
-    style="?android:attr/buttonBarStyle">
+    tools:layout_editor_absoluteY="81dp">
 
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="43dp">
 
         <TableRow
             android:layout_width="match_parent"
@@ -19,6 +21,7 @@
 
             <Button
                 android:id="@+id/aButton"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -30,6 +33,7 @@
 
             <Button
                 android:id="@+id/bButton"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -41,6 +45,7 @@
 
             <Button
                 android:id="@+id/cButton"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -58,6 +63,7 @@
             <Button
                 android:id="@+id/dButton"
 
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -70,6 +76,7 @@
             <Button
                 android:id="@+id/eButton"
 
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -82,6 +89,7 @@
             <Button
                 android:id="@+id/fButton"
 
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -98,6 +106,7 @@
 
             <Button
                 android:id="@+id/gButton"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -109,6 +118,7 @@
 
             <Button
                 android:id="@+id/heButton"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -120,13 +130,14 @@
 
             <Button
                 android:id="@+id/hfButton"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/colorPrimaryLight"
                 android:text="@string/hfButton"
-                android:textColor="@color/colorPrimaryDark"
 
+                android:textColor="@color/colorPrimaryDark"
                 tools:layout_editor_absoluteX="153dp"
                 tools:layout_editor_absoluteY="296dp" />
         </TableRow>
@@ -137,6 +148,7 @@
 
             <Button
                 android:id="@+id/hgButton"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -148,6 +160,7 @@
 
             <Button
                 android:id="@+id/gsButton"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -159,6 +172,7 @@
 
             <Button
                 android:id="@+id/fsButton"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -175,6 +189,7 @@
 
             <Button
                 android:id="@+id/csButton"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -186,6 +201,7 @@
 
             <Button
                 android:id="@+id/bbButton"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -197,6 +213,7 @@
 
             <Button
                 android:id="@+id/dsButton"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -229,46 +246,66 @@
         </TableRow>
     </TableLayout>
 
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="135dp"
+        android:layout_marginTop="950dp"
+        android:layout_marginEnd="410dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tableLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/okButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryLight"
+                android:text="@string/okButton"
+                android:textColor="@color/colorPrimaryDark"
+                app:layout_constraintBottom_toTopOf="@+id/resButton"
+                app:layout_constraintEnd_toStartOf="@+id/tableLayout"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/incPass" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/resButton"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryLight"
+                android:text="@string/resButton"
+                android:textColor="@color/colorPrimaryDark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.51"
+                app:layout_constraintStart_toEndOf="@+id/tableLayout"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
     <android.support.constraint.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp" />
-
-    <Button
-        android:id="@+id/okButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="148dp"
-        android:layout_marginBottom="88dp"
-        android:background="@color/colorPrimaryLight"
-        android:text="@string/okButton"
-        android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toEndOf="@+id/tableLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/resButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="148dp"
-        android:layout_marginBottom="28dp"
-        android:background="@color/colorPrimaryLight"
-        android:text="@string/resButton"
-        android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toEndOf="@+id/tableLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
-        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/incPass"
@@ -277,18 +314,15 @@
         android:layout_marginStart="56dp"
         android:layout_marginTop="95dp"
         android:layout_marginEnd="76dp"
-        android:layout_marginBottom="27dp"
         android:text="@string/incPass"
         android:textAlignment="center"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="20sp"
         android:textStyle="bold"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/okButton"
         app:layout_constraintEnd_toStartOf="@+id/tableLayout"
         app:layout_constraintHorizontal_bias="0.143"
         app:layout_constraintStart_toEndOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
-        app:layout_constraintVertical_bias="0.98" />
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
 
 </android.support.constraint.ConstraintLayout>
